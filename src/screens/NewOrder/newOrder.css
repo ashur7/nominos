@@ -1,0 +1,155 @@
+.newOrder-container {
+  background-image: url("../../assets/pizzaBackgroundMb.jpg");
+  height: calc(100vh - 90px);
+
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 15%;
+}
+
+.createOrder_logo {
+  width: 60%;
+  position: relative;
+}
+.createOrder_desktop_formLogoContainer {
+  text-align: center;
+}
+
+.newOrder_formContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.newOrder-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: calc(100% - 46px);
+  width: 100%;
+  margin-top: 46px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.transparent_input {
+  background-color: transparent;
+  color: white !important;
+}
+
+.transparent_input .ant-select-selection-placeholder {
+  color: white;
+}
+
+.ant-select-selector {
+  background-color: transparent !important;
+  color: white !important;
+}
+
+.newOrder_select {
+  color: white;
+}
+
+.newOrder_formLabel {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.newOrder_formLabel .ant-form-item-label > label {
+  color: white;
+  font-size: 1rem;
+}
+.newOrder_checkboxText {
+  color: white;
+}
+
+.newOrder_toppingsContainer {
+  width: 75%;
+}
+
+.checkbox-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  margin-top: 5%;
+}
+
+.newOrder_checkboxGroup .ant-checkbox-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.newOrder_checkboxGroup .ant-checkbox-wrapper span {
+  margin-left: 5px;
+}
+
+.createOrder_formButton {
+  margin-top: 5%;
+}
+
+.createOrder_formButton button:disabled {
+  color: black;
+  background-color: grey !important;
+}
+
+@media screen and (min-width: 768px) {
+  .newOrder-container {
+    align-items: flex-end;
+    background-image: url("../../assets/pizzaBackgroundDsk.jpg");
+    gap: 5%;
+    width: 100%;
+    justify-content: center;
+    padding-top: 0;
+    height: calc(100vh - 40px);
+    position: relative;
+  }
+
+  .newOrder-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: calc(100%);
+    width: 100%;
+    margin-top: 0px;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .createOrder_desktop_formLogoContainer {
+    position: absolute;
+    top: 10%;
+    right: 3%;
+    text-align: center;
+  }
+  .newOrder_toppingsContainer {
+    width: 100%;
+  }
+
+  .newOrder_formLabel {
+    align-items: start;
+  }
+
+  .newOrder_formContainer {
+    width: 100%;
+  }
+
+  .createOrder_logo {
+    width: 70%;
+  }
+  .transparent_input {
+    width: 25rem;
+  }
+
+  .transparent_input .ant-select-selector {
+    width: 25rem !important;
+  }
+
+  .createOrder_formButton {
+    width: 100%;
+  }
+}

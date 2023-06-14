@@ -1,0 +1,87 @@
+.ordersPage_container {
+  width: 100%;
+  height: 93vh;
+  padding-top: 1%;
+  background-image: url("../../assets/ordersPageBackgroundDsk.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ordersPage_container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: calc(100% - 46px);
+  width: 100%;
+  margin-top: 46px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.ant-table {
+  background-color: transparent !important;
+  background: transparent !important;
+  color: white !important;
+  height: 70%;
+}
+
+.ordersPage_heading {
+  width: 100%;
+  text-align: center;
+}
+
+.ordersPage_logo {
+  width: 25%;
+  position: relative;
+}
+
+.ant-table-empty {
+  background-color: transparent !important;
+  background: transparent !important;
+}
+.transparent-table {
+  background-color: transparent;
+  width: 70%;
+  margin-top: 2%;
+  color: white !important;
+}
+
+.transparent-table th,
+.transparent-table td {
+  border: 1px solid white;
+  color: white !important;
+}
+
+.ant-table-placeholder {
+  background-color: transparent !important;
+  color: white !important;
+}
+.ant-empty-description {
+  color: white !important;
+}
+
+.bg-white {
+  background-color: transparent !important;
+  color: white !important;
+}
+
+.table_row_class {
+  color: white !important;
+}
+
+@media screen and (max-width: 425px) {
+  .transparent-table {
+    width: 90%;
+    margin-top: 5%;
+  }
+  .ordersPage_container {
+    padding-top: 5%;
+  }
+
+  .ordersPage_logo {
+    width: 40%;
+  }
+}
