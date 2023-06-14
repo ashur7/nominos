@@ -10,13 +10,9 @@ This is a restaurant order management app that tracks pizza orders and updates t
 
 ## Usage
 
-To run the program, you have two options:
+To run the program :
 
-1. Using Docker image: You can use the provided Docker image to run the application directly. Ensure that Docker is installed on your machine and execute the following command:
-
-   docker run -p 3000:3000 -p 8000:8000 nominos
-
-2. Build your own Docker image: If you prefer to create a new Docker image, follow these steps:
+1. Build your own Docker image: If you prefer to create a new Docker image, follow these steps:
 
    Clone the repository to your local machine.
 
@@ -26,12 +22,30 @@ To run the program, you have two options:
 
    docker build -t <your-image-name> .
 
-   ocker run -p 3000:3000 -p 8000:8000 <your-image-name>
+   Docker run -p 3000:3000 -p 8000:8000 <your-image-name>
 
 Make sure to update the port mappings if required.
 
 The frontend of the application will be accessible at http://localhost:3000, and the backend will be running on http://localhost:8000.
 
+2. Click on the "Fork" button in the upper right corner of the page. This will create a fork of the repository under your GitHub account.
+
+Once the fork is complete, you can clone the repository to your local machine using the following command:
+   
+   git clone https://github.com/your-username/nominos.git
+
+   cd nominos
+
+   docker build -t <TAG-NAME> .
+   
+   docker run -p 3000:3000 -p 8000:8000 <TAG-NAME>
+   
+   This will start the application container, mapping port 3000 for the frontend and port 8000 for the backend.
+
+   Open your web browser and navigate to http://localhost:3000 to access the restaurant order management app.
+
+
+   
 Dependencies
 
 The project has the following dependencies:
